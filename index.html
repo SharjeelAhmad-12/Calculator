@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(161, 219, 241);
+
+
+    }
+
+    .mainContainer {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .field-Container {
+      width: 200px;
+      padding: 8px 8px 15px 12px;
+
+      background-color: black;
+      border-radius: 10px;
+      border: 1px solid black;
+
+    }
+
+    .display {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      width: 174px;
+      padding: 0 10px;
+      border-radius: 4px;
+      border: 1px solid lightgray;
+      background-color: rgb(238, 231, 231);
+      font-size: 28px;
+      color: #666;
+      text-align: right;
+      font-weight: 400;
+    }
+
+    .buttons {
+      display: inline-block;
+      border: 1px solid lightgray;
+      margin: 2px;
+      width: 42px;
+      height: 42px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .operatorButtons {
+      margin: 2px 2px 6px 2px;
+      color: white;
+      background-color: #434343;
+
+    }
+
+    #clearButton {
+      color: white;
+      background-color: #D20000;
+    }
+
+    .btn-equal {
+      background-color: orangered;
+      color: white;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+      
+  <!-- <div class="container mainContainer">
+  <p>duvbcb</p>
+</div> -->
+
+  <div class="container mainContainer">
+    <fieldset class="field-Container">
+      <form name="calculator" id="form">
+        <input class="display" id="display1" type="text" name="display" readonly>
+        <button class="buttons " value="7" onclick="add(7)">7</button>
+        <button class="buttons " value="8" onclick="add(8)">8</button>
+        <button class="buttons " value="9" onclick="add(9)">9</button>
+        <button class="buttons operatorButtons" onclick="add('-')">-</button>
+        <br>
+        <button class="buttons " value="4" onclick="add(4)">4</button>
+        <button class="buttons " value="5" onclick="add(5)">5</button>
+        <button class="buttons " value="6" onclick="add(6)">6</button>
+        <button class="buttons operatorButtons" onclick="add('*')">*</button>
+        <br>
+        <button class="buttons " value="1" onclick="add(1)">1</button>
+        <button class="buttons " value="2" onclick="add(2)">2</button>
+        <button class="buttons " value="3" onclick="add(3)">3</button>
+        <button class="buttons operatorButtons" onclick="add('/')">/</button>
+        <br>
+        <button class="buttons " value="." onclick="add('.')">.</button>
+        <button class="buttons " value="0" onclick="add(0)">0</button>
+        <button id="clearButton" class="buttons" onclick="clearDisplay()">C</button>
+        <button class="buttons operatorButtons" onclick="add('+')">+</button>
+        <br>
+        <button class="buttons btn-equal operatorButtons" onclick="calculate()">=</button>
+      </form>
+    </fieldset>
+  </div>
+
+
+
+  <script src=" Calculator.js"></script>
+</body>
+
+</html>
